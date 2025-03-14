@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sorry Sonam</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+            font-family: 'Arial', sans-serif;
+            color: #5A189A;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 700px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #FF69B4, #FF1493);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            color: white;
+            background: linear-gradient(90deg, #FF1493, #FF69B4);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(255, 20, 147, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 30px rgba(255, 20, 147, 0.8);
+        }
+
+        #message {
+            margin-top: 30px;
+            font-size: 1.8rem;
+            color: #D63384;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sorry Sonam!</h1>
+        <p>Aise chup mat raha karo yaar…
+            Dantna ho to dant lo, rude hona ho to ho jao,
+            Lekin chup mat raho na…</p>
+        <button onclick="showMessage()"> kuchh to text karo 😊</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent = "sorry yaar thoda rude ho gaya tha, chalo ab maaf kar do 😊";
+        }
+    </script>
+
+</body>
+
+</html>
